@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    background: #c1f4eb;
+    padding: 5px;
+    font-size: 26px;
+    align-items: center;
+    font-family: "roboto", roboto;
+    color: #068d80;
+    
+}
+
+.logo {
+    padding: 5px;
+}
+
+.header {
+    padding-Left: 25px;
+}
+
+.image {
+    padding-left: 25px;
+}
