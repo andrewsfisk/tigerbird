@@ -1,22 +1,42 @@
-.container {
-    display: flex;
-    background: #c1f4eb;
-    padding: 5px;
-    font-size: 26px;
-    align-items: center;
+nav {
     font-family: "roboto", roboto;
+    font-size: 26px;
     color: #068d80;
-    
+    background: #c1f4eb;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);  
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem; 
+    flex-grow: 1;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
 }
 
 .logo {
-    padding: 5px;
+    padding-left: 1.5rem;
 }
 
-.header {
-    padding-Left: 25px;
+.img {
+    padding-right: 1.5rem
+}
+.main {
+    padding: 1rem;
 }
 
-.image {
-    padding-left: 25px;
+nav a.active {
+    background-color: #a6e8db;
 }
