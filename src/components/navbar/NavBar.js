@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route, NavLink as Link } from "react-router-dom";
 import "./NavBar.css";
 import Home from "../../pages/Home";
-import Services from "../../pages/Services";
-import About from "../../pages/About";
+import Bookkeeping from "../../pages/Bookkeeping";
+import Mentoring from "../../pages/Mentoring";
 import Contact from "../../pages/Contact";
 import logo from "./logo.png";
 import image from "./image.png";
@@ -27,13 +27,13 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Services" activeClassName="active">
-                Services
+              <Link to="/Bookkeeping" activeClassName="active">
+                Bookkeeping
               </Link>
             </li>
             <li>
-              <Link to="/About" activeClassName="active">
-                About
+              <Link to="/Mentoring" activeClassName="active">
+                Hospitality Mentoring
               </Link>
             </li>
             <li>
@@ -54,8 +54,8 @@ const NavBar = () => {
       <div className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/Bookkeeping" element={<Bookkeeping />} />
+          <Route path="/Mentoring" element={<Mentoring />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
