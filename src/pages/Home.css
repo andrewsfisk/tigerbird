@@ -1,11 +1,12 @@
 h1 {
     font-family: "roboto", roboto;
+    font-weight: 500;
     color: #068d80;
     padding-left: 1rem;
 }
 
 p {
-    font-family: "roboto", roboto;
+    font-family: "Nunito", sans-serif;
     color: #068d80;
     padding-left: 1rem;
     font-size: 1.5rem;
