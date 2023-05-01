@@ -1,0 +1,50 @@
+h1, h2 {
+    font-family: "roboto", roboto;
+    font-weight: 500;
+    color: #068d80;
+    padding-left: 1rem;
+}
+
+h4, h5 {
+    font-family: "Nunito", sans-serif;
+    color: #068d80;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    color: #068d80;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.h1 {
+    display: flex;
+    padding-top: 1rem;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: #068d80;
+}
+
+.hrBottom {
+    margin-bottom: 2rem;
+}
+
+.xero {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    align-self: center;
+}
+

@@ -1,9 +1,12 @@
 import React from "react";
+import "./Styles.css";
+import xero from "./images/xeroLogo2.png";
 
 const Bookkeeping = () => {
   return (
-    <div>
-      <h3>Our services include, but are not limited to</h3>
+    <div className="container">
+      <h1 className="h1">Our services include, but are not limited to</h1>
+      <hr></hr>
       <div>
         <p>• Reconciliation of all bank accounts and credit cards</p>
         <p>
@@ -20,16 +23,23 @@ const Bookkeeping = () => {
         <p>• Stocktake management</p>
         <p>All bookkeeping services are ATO compliant</p>
       </div>
-      <h3>We love Xero!</h3>
-      <p>
-        It’s easy to use, lets us access your books easily and integrates with
-        many other applications, including: Hubdoc invoice & receipt capturing,
-        to streamline the data process and transferring your invoices from
-        Cooking the Books & Drinking the Profits
-      </p>
-      <p>
-        If you’re not on Xero and want to be, we can help you make the change
-      </p>
+      <hr></hr>
+      <div className="xero">
+        <img className="img" alt="xero" src={xero} width="200"></img>
+        <div>
+          <h1>We love Xero!</h1>
+          <p>
+            It's easy to use, lets us access your books easily and integrates
+            with many other applications, including Hubdoc, Cooking The Books &
+            Drinking The Profits, to streamline the data process and capture
+            your receipts.
+          </p>
+          <p>
+            If you're not on Xero and want to be, we can help you make the
+            change.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
