@@ -43,7 +43,7 @@ const NavBar = () => {
             </li>
           </ul>
           <img
-            className="img"
+            className="navimg"
             alt="logo"
             src={image}
             width="40px"

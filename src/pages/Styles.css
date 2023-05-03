@@ -48,3 +48,30 @@ hr {
     align-self: center;
 }
 
+.img2 {
+    align-self: center;
+}
+
+.img3 {
+    align-self: center;
+}
+
+.img4 {
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.logoFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.italic {
+    font-style: italic;
+}
+
+.pad {
+    padding-left: 2rem;
+}

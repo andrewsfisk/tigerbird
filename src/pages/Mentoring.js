@@ -1,16 +1,16 @@
 import React from "react";
 import "./Styles.css";
-// import image3 from "./images/image3.jpg";
+import image from "./images/plant.jpg";
 
 const Mentoring = () => {
   return (
     <div className="container">
-      <h1 className="h1">
-        Do you find yourself asking the following questions?
-      </h1>
+      <div className="h1">
+        <h1>Do you find yourself asking the following questions?</h1>
+      </div>
       <hr></hr>
       <div className="row">
-        <div>
+        <div className="logoFlex">
           <div>
             <p>• Am I making a profit?</p>
             <p>• What are my costs?</p>
@@ -27,10 +27,9 @@ const Mentoring = () => {
               for growth.
             </p>
           </div>
+          <img className="img3" alt="plant" src={image} />
         </div>
-        {/* <img className="img3" alt="image3" src={image3} /> */}
       </div>
-      <hr></hr>
     </div>
   );
 };
