@@ -19,9 +19,14 @@ p {
     font-size: 1.5rem;
 }
 
+.title {
+    font-weight: bold;
+}
+
 .container {
-    padding-left: 13rem;
-    padding-right: 13rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    background-color: white;
 }
 
 .h1 {
@@ -74,4 +79,14 @@ hr {
 
 .pad {
     padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    color: black;
 }
