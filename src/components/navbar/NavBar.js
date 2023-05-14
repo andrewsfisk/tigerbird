@@ -53,7 +53,9 @@ const NavBar = () => {
       </div>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}>
+            <Redirect to="/Home" />
+          </Route>
           <Route path="/Bookkeeping" element={<Bookkeeping />} />
           <Route path="/Mentoring" element={<Mentoring />} />
           <Route path="/Contact" element={<Contact />} />
