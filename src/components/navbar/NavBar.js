@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, NavLink as Link } from "react-router-dom";
+import { Routes, Route, Redirect, NavLink as Link } from "react-router-dom";
 import "./NavBar.css";
 import Home from "../../pages/Home";
 import Bookkeeping from "../../pages/Bookkeeping";
@@ -53,7 +53,9 @@ const NavBar = () => {
       </div>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}>
+            <Redirect to="/Home" />
+          </Route>
           <Route path="/Bookkeeping" element={<Bookkeeping />} />
           <Route path="/Mentoring" element={<Mentoring />} />
           <Route path="/Contact" element={<Contact />} />
