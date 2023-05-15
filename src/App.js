@@ -59,7 +59,7 @@ function App() {
       </div>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/Bookkeeping" element={<Bookkeeping />} />
           <Route path="/Mentoring" element={<Mentoring />} />
           <Route path="/Contact" element={<Contact />} />
