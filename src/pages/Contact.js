@@ -17,11 +17,11 @@ const Contact = () => {
             <a href="tel:0491 076 179">m: 0491 076 179</a>
           </p>
           <p>
-            <a href="tel:03 9489 1790">p: 03 9489 1790</a>
+            <a href="tel:03 9383 6659">p: 03 9383 6659</a>
           </p>
           <p>
-            <a href="mailto:accounts@tigerbirdinternational.com">
-              e: accounts@tigerbirdinternational.com
+            <a href="mailto:accounts@tigerbirdbookkeeping.com">
+              e: accounts@tigerbirdbookkeeping.com
             </a>
           </p>
           <p>
