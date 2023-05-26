@@ -14,9 +14,6 @@ const Contact = () => {
           <p className="title">Debbie King</p>
           <p>Bookkeeping and Account Manager</p>
           <p>
-            <a href="tel:0491 076 179">m: 0491 076 179</a>
-          </p>
-          <p>
             <a href="tel:03 9383 6659">p: 03 9383 6659</a>
           </p>
           <p>
@@ -25,16 +22,16 @@ const Contact = () => {
             </a>
           </p>
           <p>
-            Office 111 C/- Dallas Group Business Centre 135 Bamfield Road,
-            Heidelberg Heights, Vic 3081.
+            Mycelium Studios, Factory 1/10-12 Moreland Road • Brunswick 3057
           </p>
         </div>
-        <img className="img4" alt="phone" src={phone} />
+        <img className="img4" alt="phone" src={phone} width="350px" />
       </div>
       <p className="italic">
-        Debbie is a Certified Bookkeeper, Xero Advisor & Payroll Certified with
-        over 45 years accounting experience.
+        * Debbie is a Certified Bookkeeper, BAS agent, Xero Advisor and is
+        Payroll Certified with over 45 years accounting experience.
       </p>
+      <hr></hr>
     </div>
   );
 };

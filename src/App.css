@@ -6,7 +6,6 @@ nav {
     background: #c1f4eb;
     display: flex;
     align-items: center;
-    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);   */
 }
 
 nav ul {
@@ -37,4 +36,8 @@ nav a {
 
 nav a.active {
     background-color: #a6e8db;
+}
+
+.pbot {
+    padding-bottom: 1rem;
 }

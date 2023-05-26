@@ -21,12 +21,14 @@ const Mentoring = () => {
               truly understand what's going on with their books.
             </p>
             <h2>That's where Tigerbird can help</h2>
-            <p>
+            <p className="pbot">
               Our mentor can help you understand your books, so you can make
               informed decisions about your future, and identify opportunities
               for growth.
             </p>
+            <hr></hr>
           </div>
+
           <img className="img3" alt="plant" src={image} />
         </div>
       </div>
