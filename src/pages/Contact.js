@@ -21,9 +21,7 @@ const Contact = () => {
               e: accounts@tigerbirdbookkeeping.com
             </a>
           </p>
-          <p>
-            Mycelium Studios, Factory 1/10-12 Moreland Road • Brunswick 3057
-          </p>
+          <p>Mycelium Studios, Factory 1/10-12 Moreland Road, Brunswick 3057</p>
         </div>
         <img className="img4" alt="phone" src={phone} width="350px" />
       </div>
@@ -31,7 +29,9 @@ const Contact = () => {
         * Debbie is a Certified Bookkeeper, BAS agent, Xero Advisor and is
         Payroll Certified with over 45 years accounting experience.
       </p>
-      <hr></hr>
+      <div className="padtop">
+        <hr></hr>
+      </div>
     </div>
   );
 };

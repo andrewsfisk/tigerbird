@@ -85,7 +85,6 @@ button {
     transition: transform ease-in-out 0.2s;
 }
     
-
 .menu-nav.show-menu {
     width: auto;
     transform: translateX(0px);
@@ -96,11 +95,20 @@ button {
     display: block;
 }
 
-/* @media (max-width: 768px) {
-   nav ul {
+@media (max-width: 768px) {
+    nav .inline {
     display: none;
    }
    .navimg {
     display: none;
    }
-} */
+   .navContainer {
+    justify-content: flex-end;
+   }
+   .hamburger {
+    margin-left: auto;
+   }
+   .logo {
+    padding: 1rem;
+   }
+}
