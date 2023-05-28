@@ -1,19 +1,20 @@
-nav {
-    font-family: "roboto", roboto;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #068d80;
+.navContainer {
     background: #c1f4eb;
     display: flex;
     align-items: center;
 }
 
-nav ul {
+
+nav .inline {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 1.5rem; 
     flex-grow: 1;
+    font-family: "roboto", roboto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #068d80;
 }
 
 
@@ -34,10 +35,72 @@ nav a {
     padding-right: 1.5rem
 }
 
-nav a.active {
+nav .inline a.active {
     background-color: #a6e8db;
 }
 
 .pbot {
     padding-bottom: 1rem;
 }
+
+/*==========================
+Sidebar navigation
+========================*/
+
+.hamburger {
+    position: relative;
+    font-family: "roboto", roboto;
+    color: #068d80;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.hamburger .toggle {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.menu-nav {
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    width: 0;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+    transform: translateX(200px);
+    transition: transform ease-in-out 0.2s;
+}
+    
+
+.menu-nav.show-menu {
+    width: auto;
+    transform: translateX(0px);
+}
+
+.menu-nav li a,
+.menu-nav li {
+    display: block;
+}
+
+/* @media (max-width: 768px) {
+   nav ul {
+    display: none;
+   }
+   .navimg {
+    display: none;
+   }
+} */

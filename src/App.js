@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Routes, Route, NavLink as Link } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -7,6 +7,8 @@ import Mentoring from "./pages/Mentoring";
 import Contact from "./pages/Contact";
 import logo from "./logo.png";
 import image from "./image.png";
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -15,10 +17,23 @@ import "@fontsource/roboto/700.css";
 import "@fontsource/nunito";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef();
+  useEffect(() => {
+    const handler = (event) => {
+      if (isOpen && ref.current && !ref.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, [isOpen]);
   return (
     <div className="">
       <div>
-        <nav>
+        <nav className="navContainer">
           <img
             className="logo"
             width="150px"
@@ -26,7 +41,7 @@ function App() {
             alt="logo"
             src={logo}
           ></img>
-          <ul>
+          <ul className="inline">
             <li>
               <Link to="/" activeClassName="active">
                 Home
@@ -39,7 +54,7 @@ function App() {
             </li>
             <li>
               <Link to="/Mentoring" activeClassName="active">
-                Hospitality Mentoring
+                Mentoring
               </Link>
             </li>
             <li>
@@ -48,6 +63,64 @@ function App() {
               </Link>
             </li>
           </ul>
+          <div ref={ref} className="hamburger">
+            <button
+              className="toggle"
+              onClick={() => setIsOpen((prev) => !prev)}
+            >
+              {isOpen ? (
+                <MdClose
+                  style={{ width: "32px", height: "32px", color: "#068d80" }}
+                />
+              ) : (
+                <FiMenu
+                  style={{
+                    width: "32px",
+                    height: "32px",
+                    color: "#068d80",
+                  }}
+                />
+              )}
+            </button>
+            <ul className={`menu-nav${isOpen ? " show-menu" : ""}`}>
+              <li>
+                <Link
+                  to="/"
+                  activeClassName="active"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Bookkeeping"
+                  activeClassName="active"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Bookkeeping
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Mentoring"
+                  activeClassName="active"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Mentoring
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Contact"
+                  activeClassName="active"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
           <img
             className="navimg"
             alt="logo"
