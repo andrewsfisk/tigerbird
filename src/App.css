@@ -32,7 +32,8 @@ nav a {
 }
 
 .navimg {
-    padding-right: 1.5rem
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 nav .inline a.active {
@@ -43,8 +44,13 @@ nav .inline a.active {
     padding-bottom: 1rem;
 }
 
+.homelink {
+    margin: 0;
+    padding: 0;
+}
+
 /*==========================
-Sidebar navigation
+hamburger navigation
 ========================*/
 
 .hamburger {
@@ -109,6 +115,7 @@ button {
     margin-left: auto;
    }
    .logo {
-    padding: 1rem;
+    padding: 0.5rem;
+    padding-top: 0.7rem;
    }
 }

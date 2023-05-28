@@ -31,16 +31,18 @@ function App() {
     };
   }, [isOpen]);
   return (
-    <div className="">
+    <div>
       <div>
         <nav className="navContainer">
-          <img
-            className="logo"
-            width="150px"
-            height="auto"
-            alt="logo"
-            src={logo}
-          ></img>
+          <Link className="homelink" to="/" activeClassName="active">
+            <img
+              className="logo"
+              width="150px"
+              height="auto"
+              alt="logo"
+              src={logo}
+            ></img>
+          </Link>
           <ul className="inline">
             <li>
               <Link to="/" activeClassName="active">

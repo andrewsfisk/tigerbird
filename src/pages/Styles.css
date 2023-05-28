@@ -115,6 +115,11 @@ a:hover {
     }
     .logoFlex {
         flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .logoFlex2 {
+        flex-direction: none;
     }
     .bothr {
         display: none;

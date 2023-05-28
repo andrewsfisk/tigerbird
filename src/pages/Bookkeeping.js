@@ -10,7 +10,7 @@ const Bookkeeping = () => {
         <h1>Services</h1>
       </div>
       <hr></hr>
-      <div className="logoFlex">
+      <div className="logoFlex2">
         <div>
           <p>• Reconciliation</p>
           <p>• Payroll</p>
