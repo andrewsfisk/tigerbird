@@ -24,9 +24,9 @@ const Home = () => {
           We specialise in supporting hospitality businesses, however our
           services are also used by a wide range of industries.
         </p>
-        <p>
+        <p className="bold grey italic">
           Let us take care of your bookkeeping, so you are free to serve your
-          customers.
+          customers
         </p>
         <hr className="hrBottom"></hr>
       </div>

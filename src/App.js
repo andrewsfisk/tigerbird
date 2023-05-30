@@ -46,7 +46,7 @@ function App() {
           <ul className="inline">
             <li>
               <Link to="/" activeClassName="active">
-                Home
+                About Us
               </Link>
             </li>
             <li>
@@ -91,7 +91,7 @@ function App() {
                   activeClassName="active"
                   onClick={() => setIsOpen(false)}
                 >
-                  Home
+                  About Us
                 </Link>
               </li>
               <li>

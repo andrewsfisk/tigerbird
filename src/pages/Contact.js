@@ -25,9 +25,9 @@ const Contact = () => {
         </div>
         <img className="img4" alt="phone" src={phone} width="350px" />
       </div>
-      <p className="italic">
-        * Debbie is a Certified Bookkeeper, BAS agent, Xero Advisor and is
-        Payroll Certified with over 45 years accounting experience.
+      <p className="bold italic grey">
+        Debbie is a Certified Bookkeeper, BAS Agent, Xero Advisor and is Payroll
+        Certified with over 45 years accounting experience.
       </p>
       <div className="padtop">
         <hr></hr>
